@@ -6,6 +6,7 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 
 // Views
 const Dashboard = () => import('@/views/Dashboard')
+const Overview = () => import('@/views/Overview')
 
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
@@ -315,6 +316,21 @@ export default new Router({
               name: 'Modals',
               component: Modals
             }
+          ]
+        },
+        {
+          path: '/',
+          redirect: '/overview',
+          name: 'Home',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'overview',
+              name: 'Overview',
+              component: Overview
+            },
           ]
         },
         {

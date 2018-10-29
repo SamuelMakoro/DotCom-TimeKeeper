@@ -266,6 +266,15 @@ export default {
       }
     },
     {
+      name: 'Overview',
+      url: '/overview',
+      icon: 'icon-speedometer',
+      badge: {
+        variant: 'success',
+        text: 'DotCom'
+      }
+    },
+    {
       name: 'Company',
       url: '/company',
       icon: 'icon-briefcase',
