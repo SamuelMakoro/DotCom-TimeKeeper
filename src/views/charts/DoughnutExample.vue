@@ -5,14 +5,14 @@ export default {
   extends: Doughnut,
   mounted () {
     this.renderChart({
-      labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+      labels: ['C#', 'JavaScript', 'SQL', 'PHP'],
       datasets: [
         {
           backgroundColor: [
-            '#41B883',
-            '#E46651',
-            '#00D8FF',
-            '#DD1B16'
+            '#c8ced3',
+            '#20c997',
+            '#ffc107',
+            '#6f42c1'
           ],
           data: [40, 20, 80, 10]
         }

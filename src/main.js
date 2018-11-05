@@ -8,6 +8,11 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './router'
+import Vuesax from 'vuesax'
+
+//Vuesax styles
+import 'vuesax/dist/vuesax.css' 
+Vue.use(Vuesax)
 
 // todo
 // cssVars()

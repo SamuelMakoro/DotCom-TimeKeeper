@@ -6,11 +6,11 @@ export default {
   extends: PolarArea,
   mounted () {
     this.renderChart({
-      labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+      labels: ['Software', 'Business Analysis', 'Marketing', 'Web Dev', 'Graphics', 'Machine Learning', 'Blockchain'],
       datasets: [
         {
           label: 'My First dataset',
-          backgroundColor: 'rgba(179,181,198,0.2)',
+          backgroundColor: 'rgba(32, 201, 151,0.2)',
           pointBackgroundColor: 'rgba(179,181,198,1)',
           pointBorderColor: '#fff',
           pointHoverBackgroundColor: '#fff',
@@ -19,12 +19,12 @@ export default {
         },
         {
           label: 'My Second dataset',
-          backgroundColor: 'rgba(255,99,132,0.2)',
+          backgroundColor: 'rgba(102, 16, 242,0.2)',
           pointBackgroundColor: 'rgba(255,99,132,1)',
           pointBorderColor: '#fff',
           pointHoverBackgroundColor: '#fff',
           pointHoverBorderColor: 'rgba(255,99,132,1)',
-          data: [28, 48, 40, 19, 96, 27, 100]
+          data: [100, 48, 40, 19, 96, 27, 28]
         }
       ]
     }, {

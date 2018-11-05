@@ -2,13 +2,13 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col sm="6" lg="3">
-          <b-card no-body class="bg-primary" header="Investec">
+          <b-card no-body class="bg-dark" header="Investec">
             <b-card-body class="pb-0">
               <b-dropdown class="float-right" variant="transparent p-0" right>
                 <template slot="button-content">
                   <i class="icon-settings"></i>
                 </template>
-                <b-dropdown-item>Action</b-dropdown-item>
+                <b-dropdown-item href="LineExample">Action</b-dropdown-item>
                 <b-dropdown-item>Another action</b-dropdown-item>
                 <b-dropdown-item>Something else here...</b-dropdown-item>
                 <b-dropdown-item disabled>Disabled action</b-dropdown-item>
@@ -16,7 +16,7 @@
               <h4 class="mb-0">463</h4>
               <p>Tasks Logged</p>
             </b-card-body>
-            <card-line1-chart-example chartId="card-chart-01" class="chart-wrapper px-3" style="height:70px;" :height="70"/>
+            <card-line1-chart-example chartId="card-chart-01" class="chart-wrapper px-3" style="height:70px;" :height="70" variant="#17a2b8"/>
           </b-card>
       </b-col>
       <b-col sm="6" lg="3">
@@ -107,43 +107,43 @@
           <b-col class="mb-sm-2 mb-0">
             <div class="text-muted">Reporting App</div>
             <strong>78.706 Views (60%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="warning" :value="60"></b-progress>
+            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="secondary" :value="60"></b-progress>
           </b-col>
           <b-col class="mb-sm-2 mb-0">
             <div class="text-muted">Asset Managemanet</div>
             <strong>22.123 Users (80%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="danger" :value="80"></b-progress>
+            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="warning" :value="80"></b-progress>
           </b-col>
           <b-col class="mb-sm-2 mb-0 d-md-down-none">
             <div class="text-muted">Contract Managemanet</div>
             <strong>Average Rate (40.15%)</strong>
-            <b-progress height={} class="progress-xs mt-2" :precision="1" :value="40"></b-progress>
+            <b-progress height={} class="progress-xs mt-2" :precision="1" variant="dark" :value="40"></b-progress>
           </b-col>
         </b-row>
       </div>
     </b-card>
     <b-row>
       <b-col md="12">
-        <b-card header="Traffic &amp; Sales">
+        <b-card header="Human Resources Tools">
           <b-row>
             <b-col sm="12" lg="6">
               <b-row>
                 <b-col sm="6">
-                  <Callout variant="info">
-                    <small class="text-muted">New Clients</small><br>
+                  <Callout variant="success">
+                    <small class="text-muted">Employee Rate</small><br>
                     <strong class="h4">9,123</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
                       <!--<callout-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" variant="#20a8d8" width="80" height="30" />-->
-                      <callout-chart-example chartId="callout-chart-01" :data="[35, 23, 56, 22, 97, 23, 64]" variant="info" width="80" height="30" />
+                      <callout-chart-example chartId="callout-chart-01" :data="[35, 23, 56, 22, 97, 23, 64]" variant="#4dbd74" width="80" height="30" />
                     </div>
                   </Callout>
                 </b-col>
                 <b-col sm="6">
-                  <Callout variant="danger">
-                    <small class="text-muted">Recurring Clients</small><br>
+                  <Callout variant="warning">
+                    <small class="text-muted">Client Rate</small><br>
                     <strong class="h4">22,643</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
-                      <callout-chart-example chartId="callout-chart-02" :data="[65, 59, 84, 84, 51, 55, 40]" variant="danger" width="80" height="30" />
+                      <callout-chart-example chartId="callout-chart-02" :data="[65, 59, 84, 84, 51, 55, 40]" variant="#ffc107" width="80" height="30" />
                     </div>
                   </Callout>
                 </b-col>
@@ -156,8 +156,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress class="progress-xs" variant="info" :value="34" height={} />
-                  <b-progress class="progress-xs" variant="danger" :value="78" height={} />
+                  <b-progress class="progress-xs" variant="success" :value="34" height={} />
+                  <b-progress class="progress-xs" variant="warning" :value="78" height={} />
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -167,8 +167,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="56" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="94" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="56" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="94" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -178,8 +178,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="12" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="67" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="12" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="67" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -189,8 +189,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="43" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="91" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="43" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="91" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -200,8 +200,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="22" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="73" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="22" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="73" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -211,8 +211,8 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="53" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="82" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="53" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="82" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="progress-group mb-4">
@@ -222,37 +222,37 @@
                   </span>
                 </div>
                 <div class="progress-group-bars">
-                  <b-progress height={} class="progress-xs" :value="9" variant="info"></b-progress>
-                  <b-progress height={} class="progress-xs" :value="69" variant="danger"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="9" variant="success"></b-progress>
+                  <b-progress height={} class="progress-xs" :value="69" variant="warning"></b-progress>
                 </div>
               </div>
               <div class="legend text-center">
                 <small>
-                  <sup><b-badge pill variant="info">&nbsp;</b-badge></sup>
-                  New clients
+                  <sup><b-badge pill variant="success">&nbsp;</b-badge></sup>
+                  Employee Rate
                   &nbsp;&nbsp;
-                  <sup><b-badge pill variant="danger">&nbsp;</b-badge></sup>
-                  Recurring clients
+                  <sup><b-badge pill variant="warning">&nbsp;</b-badge></sup>
+                  Client Rate
                 </small>
               </div>
             </b-col>
             <b-col sm="12" lg="6">
               <b-row>
                 <b-col sm="6">
-                  <Callout variant="warning">
-                    <small class="text-muted">Pageviews</small><br>
+                  <Callout variant="dark">
+                    <small class="text-muted">Contract Agreements</small><br>
                     <strong class="h4">78,623</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
-                      <callout-chart-example chartId="callout-chart-03" :data="[35, 23, 56, 22, 97, 23, 64]" variant="#f8cb00" width="80" height="30"/>
+                      <callout-chart-example chartId="callout-chart-03" :data="[35, 23, 56, 22, 97, 23, 64]" variant="dark" width="80" height="30"/>
                     </div>
                   </Callout>
                 </b-col>
                 <b-col sm="6">
-                  <Callout variant="success">
-                    <small class="text-muted">Organic</small><br>
+                  <Callout variant="info">
+                    <small class="text-muted">Contract Terminations</small><br>
                     <strong class="h4">49,123</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
-                      <callout-chart-example chartId="callout-chart-04" :data="[65, 59, 84, 84, 51, 55, 40]" variant="#4dbd74" width="80" height="30" />
+                      <callout-chart-example chartId="callout-chart-04" :data="[65, 59, 84, 84, 51, 55, 40]" variant="info" width="80" height="30" />
                     </div>
                   </Callout>
                 </b-col>
@@ -266,7 +266,7 @@
                     <span class="ml-auto font-weight-bold">43%</span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="43" variant="warning"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="43" variant="dark"></b-progress>
                   </div>
                 </div>
                 <div class="progress-group mb-5">
@@ -276,47 +276,47 @@
                     <span class="ml-auto font-weight-bold">37%</span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="37" variant="warning"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="37" variant="dark"></b-progress>
                   </div>
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-globe progress-group-icon"></i>
-                    <span class="title">Software Developers</span>
+                    <i class="icon-mouse  progress-group-icon"></i>
+                    <span class="title">Software Development</span>
                     <span class="ml-auto font-weight-bold">191,235 <span class="text-muted small">(56%)</span></span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="56" variant="success"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="56" variant="info"></b-progress>
                   </div>
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-facebook progress-group-icon"></i>
-                    <span class="title">Bussiness Analysts</span>
+                    <i class="cui-graph progress-group-icon"></i>
+                    <span class="title">Consulting Services</span>
                     <span class="ml-auto font-weight-bold">51,223 <span class="text-muted small">(15%)</span></span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="15" variant="success"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="15" variant="info"></b-progress>
                   </div>
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-twitter progress-group-icon"></i>
-                    <span class="title">Web Developers</span>
+                    <i class="icon-bag  progress-group-icon"></i>
+                    <span class="title">Digital Marketing</span>
                     <span class="ml-auto font-weight-bold">37,564 <span class="text-muted small">(11%)</span></span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="11" variant="success"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="11" variant="info"></b-progress>
                   </div>
                 </div>
                 <div class="progress-group">
                   <div class="progress-group-header">
-                    <i class="icon-social-linkedin progress-group-icon"></i>
-                    <span class="title">Database Administrators</span>
+                    <i class="cui-home progress-group-icon"></i>
+                    <span class="title">Internal Staff</span>
                     <span class="ml-auto font-weight-bold">27,319 <span class="text-muted small">&nbsp;(8%)</span></span>
                   </div>
                   <div class="progress-group-bars">
-                    <b-progress height={} class="progress-xs" :value="8" variant="success"></b-progress>
+                    <b-progress height={} class="progress-xs" :value="8" variant="info"></b-progress>
                   </div>
                 </div>
                 <div class="divider text-center">
@@ -329,28 +329,28 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col sm="3">
-        <b-card header="Programming Language Proficiancy">
+      <b-col md="3">
+        <b-card header="Language Proficiancy Population">
           <div class="chart-wrapper">
             <doughnut-example chartId="chart-doughnut-01"/>
           </div>
         </b-card>
       </b-col>
-        <b-col sm="3">
-          <b-card header="Polar Area Chart">
+        <b-col md="3">
+          <b-card header="Department Population">
           <div class="chart-wrapper">
             <polar-area-example chartId="chart-polar-area-01"/>
           </div>
         </b-card>
       </b-col>
-        <b-col sm="3">
-          <b-card header="Pie Chart">
+        <b-col md="3">
+          <b-card header="Project Population">
           <div class="chart-wrapper">
             <pie-example chartId="chart-pie-01"/>
           </div>
         </b-card>
       </b-col>
-        <b-col sm="3">
+        <b-col md="3">
           <b-card header="Line Chart">
           <div class="chart-wrapper">
             <line-example chartId="chart-line-01"/>
@@ -360,6 +360,7 @@
     </b-row>
   </div>
 </template>
+
 
 <script>
 import CardLine1ChartExample from './dashboard/CardLine1ChartExample'
@@ -393,80 +394,7 @@ export default {
   },
   data: function () {
     return {
-      selected: 'Month',
-      tableItems: [
-        {
-          avatar: { url: 'img/avatars/1.jpg', status: 'success' },
-          user: { name: 'Yiorgos Avraamu', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'USA', flag: 'us' },
-          usage: { value: 50, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Mastercard', icon: 'fa fa-cc-mastercard' },
-          activity: '10 sec ago'
-        },
-        {
-          avatar: { url: 'img/avatars/2.jpg', status: 'danger' },
-          user: { name: 'Avram Tarasios', new: false, registered: 'Jan 1, 2015' },
-          country: { name: 'Brazil', flag: 'br' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Visa', icon: 'fa fa-cc-visa' },
-          activity: '5 minutes ago'
-        },
-        {
-          avatar: { url: 'img/avatars/3.jpg', status: 'warning' },
-          user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'India', flag: 'in' },
-          usage: { value: 74, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Stripe', icon: 'fa fa-cc-stripe' },
-          activity: '1 hour ago'
-        },
-        {
-          avatar: { url: 'img/avatars/4.jpg', status: '' },
-          user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'France', flag: 'fr' },
-          usage: { value: 98, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'PayPal', icon: 'fa fa-paypal' },
-          activity: 'Last month'
-        },
-        {
-          avatar: { url: 'img/avatars/5.jpg', status: 'success' },
-          user: { name: 'Agapetus Tadeáš', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Spain', flag: 'es' },
-          usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Google Wallet', icon: 'fa fa-google-wallet' },
-          activity: 'Last week'
-        },
-        {
-          avatar: { url: 'img/avatars/6.jpg', status: 'danger' },
-          user: { name: 'Friderik Dávid', new: true, registered: 'Jan 1, 2015' },
-          country: { name: 'Poland', flag: 'pl' },
-          usage: { value: 43, period: 'Jun 11, 2015 - Jul 10, 2015' },
-          payment: { name: 'Amex', icon: 'fa fa-cc-amex' },
-          activity: 'Last week'
-        }
-      ],
-      tableFields: {
-        avatar: {
-          label: '<i class="icon-people"></i>',
-          class: 'text-center'
-        },
-        user: {
-          label: 'User'
-        },
-        country: {
-          label: 'Country',
-          class: 'text-center'
-        },
-        usage: {
-          label: 'Usage'
-        },
-        payment: {
-          label: 'Payment method',
-          class: 'text-center'
-        },
-        activity: {
-          label: 'Activity'
-        }
-      }
+      
     }
   },
   methods: {
