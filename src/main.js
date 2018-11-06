@@ -14,10 +14,16 @@ import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' 
 Vue.use(Vuesax)
 
+//A date & time picker component imported from Vue.js Examples
+import VueCtkDateTimePicker from 'vue-ctk-date-time-picker';
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.min.css';
+
 // todo
 // cssVars()
 
 Vue.use(BootstrapVue)
+//Imported date & time picker component registered
+Vue.component('vue-ctk-date-time-picker', VueCtkDateTimePicker);
 
 /* eslint-disable no-new */
 new Vue({

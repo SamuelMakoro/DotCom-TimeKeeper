@@ -101,6 +101,15 @@ npm run test:unit
 # run e2e tests
 npm run test:e2e
 
+
+# install vuesax components library
+npm install vuesax # OR yarn add vuesax
+
+# install date & time picker component
+npm i --save vue-ctk-date-time-picker
+
+
+
 ```
 
 For a detailed explanation on how things work, check out the [Vue CLI Guide](https://cli.vuejs.org/guide/).

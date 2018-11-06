@@ -37,18 +37,58 @@
                 </div>
               </b-table>
             </b-card>
-          </b-col>
-    </b-row>
-    <b-row>
-      <vs-tabs :color="colorx">
+            <b-col md='13' >
+              <b-card border-variant='dark'>
+            <b-col>
+              <vs-tabs :color="colorx" >
       <vs-tab @click="colorx = 'rgb(23, 162, 184)'" vs-label="Search">
         <div class="con-tab-ejemplo">
-          
+          <b-col sm xs="12" class="text-center mt-3">
+            <b-button variant="ghost-info">
+              <i class="fa fa-search"></i>&nbsp;Confirm
+            </b-button>
+          </b-col>
         </div>
       </vs-tab>
-      <vs-tab @click="colorx = 'success'" vs-label="Add">
+      <vs-tab @click="colorx = 'rgb(77, 189, 116)'" vs-label="Add">
         <div class="con-tab-ejemplo">
-          <b-col sm="6">
+          <b-col sm xs="12" class="text-center mt-3">
+            <b-button variant="ghost-success">
+              <i class="fa fa-plus-square-o  "></i>&nbsp;Confirm
+            </b-button>
+          </b-col>
+        </div>
+      </vs-tab>
+      <vs-tab @click="colorx = 'rgb(255, 193, 7)'" vs-label="Update">
+        <div class="con-tab-ejemplo">
+          <b-col sm xs="12" class="text-center mt-3">
+            <b-button variant="ghost-warning">
+              <i class="fa fa-cloud-upload"></i>&nbsp;Confirm
+            </b-button>
+          </b-col>
+        </div>
+      </vs-tab>
+      <vs-tab @click="colorx = 'rgb(248, 108, 107)'" vs-label="Delete">
+        <div class="con-tab-ejemplo">
+          <b-col sm xs="12" class="text-center mt-3">
+            <b-button variant="ghost-danger">
+              <i class="fa fa-trash "></i>&nbsp;Confirm
+            </b-button>
+          </b-col>
+        </div>
+      </vs-tab>
+        <vs-tab @click="colorx = 'rgb(16, 233, 179)'" vs-label="Analysis">
+        <div class="con-tab-ejemplo">
+          RGB | HEX
+        </div>
+      </vs-tab>
+    </vs-tabs>
+            </b-col>
+            </b-card>
+            </b-col>
+            
+          </b-col>
+          <b-col sm="4">
             <b-card>
           <div slot="header">
             <strong>Add Company </strong>
@@ -147,24 +187,10 @@
           </b-row>
         </b-card>
       </b-col>
-        </div>
-      </vs-tab>
-      <vs-tab @click="colorx = 'warning'" vs-label="Update">
-        <div class="con-tab-ejemplo">
-          Warning
-        </div>
-      </vs-tab>
-      <vs-tab @click="colorx = 'danger'" vs-label="Delete">
-        <div class="con-tab-ejemplo">
-          Dark
-        </div>
-      </vs-tab>
-        <vs-tab @click="colorx = 'rgb(16, 233, 179)'" vs-label="RGB | HEX">
-        <div class="con-tab-ejemplo">
-          RGB | HEX
-        </div>
-      </vs-tab>
-    </vs-tabs>
+      
+    </b-row>
+    <b-row>
+      
     </b-row>
   </div>
 </template>
